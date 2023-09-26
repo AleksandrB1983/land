@@ -33,11 +33,7 @@
                     <failIfNoTests>true</failIfNoTests>
                 </configuration>
             </plugin>
-        </plugins>
-     </build>
 
-
-          <plugins>
              <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
@@ -45,7 +41,7 @@
                 <configuration>
                     <checkstyleRules>
                         <module name="Cheker">
-                            <module name="Treewalker">
+                            <module name="TreeWalker">
                                 <module name="LocalVariableName"/>
                             </module>
                         </module>
@@ -60,9 +56,9 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-          </plugins>
+             </plugin>
+        </plugins>
 
-
+    </build>
 
 </project>
